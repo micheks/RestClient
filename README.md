@@ -27,7 +27,7 @@ public class MyApplication extends BaseApplication {
     public void onCreate() {
         super.onCreate();
         //初始化常用配置
-        Kylin.init(this)
+         Config.init(this)
                 .withLoaderDelayed(500)
                 .withApiHost("http://xxx.com/")//你的服务域名或者IP
                 .withInterceptor(new DebugInterceptor("test", R.raw.test))
