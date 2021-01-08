@@ -42,7 +42,7 @@ public class MyApplication extends BaseApplication {
 ##### 1.post请求方式使用
 
 ``` 
-HttpClient.builder()
+RestClient.builder()
         .url("")//请求地址url，不包含域名端口
         .params("", "")//参数，可添加多个
         .loader(this)//loading加载动画
@@ -67,7 +67,7 @@ HttpClient.builder()
 ##### 2.get请求方式使用
 
 ``` 
-HttpClient.builder()
+RestClient.builder()
         .url("")//请求地址url，不包含域名端口
         .params("", "")//参数，可添加多个
         .loader(this)//loading加载动画
@@ -92,7 +92,7 @@ HttpClient.builder()
 ##### 3.文件上传
 
 ``` 
-HttpClient.builder()
+RestClient.builder()
         .url("")//请求地址url，不包含域名端口
         .params("", "")//参数，可添加多个
         .file(file)//要上传的文件
@@ -118,7 +118,7 @@ HttpClient.builder()
 ##### 4.下载文件
 
 ``` 
-HttpClient.builder()
+RestClient.builder()
         .url("")//请求地址url，不包含域名端口
         .params("", "")//参数，可添加多个
         .extension("apk")//文件后缀名
