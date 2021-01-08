@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.alliky.http.config.Config;
 import com.alliky.http.interceptors.DebugInterceptor;
-import com.alliky.restclient.Global.BaseAPI;
+import com.alliky.restclient.global.BaseAPI;
 
 /**
  * @Description: java类作用描述

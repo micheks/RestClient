@@ -23,7 +23,7 @@ public class LoginPresenter extends BasePresenter<LoginContract.View> implements
     @Override
     public void login() {
         if (isViewAttached()){
-            mModel.login(mContext, mView.getUsername(), mView.getPassword(), new ICallback<UserEntity>() {
+            mModel.login(getContext(), mView.getUsername(), mView.getPassword(), new ICallback<UserEntity>() {
                 @Override
                 public void onSuccess(UserEntity result) {
                     mView.loginResult(result);

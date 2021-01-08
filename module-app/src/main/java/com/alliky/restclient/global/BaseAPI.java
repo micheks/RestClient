@@ -1,4 +1,4 @@
-package com.alliky.restclient.Global;
+package com.alliky.restclient.global;
 
 /**
  * @Description: java类作用描述

@@ -10,7 +10,7 @@ import android.content.Context;
 public class BasePresenter<V extends IBaseView> {
 
     public V mView;
-    public Context mContext;
+    private Context mContext;
 
     public BasePresenter(V view) {
         this.mView = view;
@@ -36,7 +36,6 @@ public class BasePresenter<V extends IBaseView> {
     /**
      * 解除绑定view，一般在onDestroy中调用
      */
-
     public void detachView() {
 
         if (mView != null) {
@@ -50,8 +49,6 @@ public class BasePresenter<V extends IBaseView> {
 
     /**
      * View是否绑定
-     *
-     * @return
      */
     public boolean isViewAttached() {
         return mView != null;
