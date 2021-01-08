@@ -18,7 +18,7 @@ dependencies {
 
 ### 代码具体调用说明
 
-#### 一、要使用该框架，则必须先在Application中初始化配置，否则使用到配置APP会闪退，配置代码如下： 
+#### 一、初始化配置， 要使用该框架，则必须先在Application中初始化配置，否则使用到配置APP会闪退，配置代码如下： 
 
 ``` 
 public class MyApplication extends BaseApplication {
@@ -43,8 +43,8 @@ public class MyApplication extends BaseApplication {
 
 ``` 
 HttpClient.builder()
-        .url("user/biz/specialCar/category")//请求地址url，不包含域名端口
-        .params("cityName", "深圳市")//参数，可添加多个
+        .url("")//请求地址url，不包含域名端口
+        .params("", "")//参数，可添加多个
         .loader(this)//loading加载动画
         .success(new ISuccess() {
             @Override
@@ -68,8 +68,8 @@ HttpClient.builder()
 
 ``` 
 HttpClient.builder()
-        .url("user/biz/specialCar/category")//请求地址url，不包含域名端口
-        .params("cityName", "深圳市")//参数，可添加多个
+        .url("")//请求地址url，不包含域名端口
+        .params("", "")//参数，可添加多个
         .loader(this)//loading加载动画
         .success(new ISuccess() {
             @Override
@@ -93,8 +93,8 @@ HttpClient.builder()
 
 ``` 
 HttpClient.builder()
-        .url("user/biz/specialCar/category")//请求地址url，不包含域名端口
-        .params("cityName", "深圳市")//参数，可添加多个
+        .url("")//请求地址url，不包含域名端口
+        .params("", "")//参数，可添加多个
         .file(file)//要上传的文件
         .loader(this)//loading加载动画
         .success(new ISuccess() {
@@ -119,8 +119,8 @@ HttpClient.builder()
 
 ``` 
 HttpClient.builder()
-        .url("user/biz/specialCar/category")//请求地址url，不包含域名端口
-        .params("cityName", "深圳市")//参数，可添加多个
+        .url("")//请求地址url，不包含域名端口
+        .params("", "")//参数，可添加多个
         .extension("apk")//文件后缀名
         .dir("/")//保存到文件夹
         .loader(this)//loading加载动画
