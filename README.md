@@ -29,7 +29,7 @@ public class MyApplication extends BaseApplication {
         //初始化常用配置
         Kylin.init(this)
                 .withLoaderDelayed(500)
-                .withApiHost("http://api.alliky.com/")//你的服务域名或者IP
+                .withApiHost("http://xxx.com/")//你的服务域名或者IP
                 .withInterceptor(new DebugInterceptor("test", R.raw.test))
                 .configure();
     }
