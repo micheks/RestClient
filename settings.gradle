@@ -1,0 +1,2 @@
+include ':module-app', ':module-http'
+rootProject.name='RestClient'
