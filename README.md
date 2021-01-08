@@ -21,7 +21,7 @@ dependencies {
 #### 一、初始化配置， 要使用该框架，则必须先在Application中初始化配置，否则使用到配置APP会闪退，配置代码如下： 
 
 ``` 
-public class MyApplication extends BaseApplication {
+public class MyApplication extends Application {
 
     @Override
     public void onCreate() {
